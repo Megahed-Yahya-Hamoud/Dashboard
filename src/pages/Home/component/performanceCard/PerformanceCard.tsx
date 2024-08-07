@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from './PerformanceCard.module.css'
 import { Box, Text, useComputedColorScheme } from '@mantine/core'
 import { Link } from 'react-router-dom'

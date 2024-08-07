@@ -1,4 +1,3 @@
-import React from "react";
 import image from "@assets/Alsafwa/Mathematics-bro.png";
 import classes from "./Event.module.css";
 import { Box, Text, useComputedColorScheme } from "@mantine/core";

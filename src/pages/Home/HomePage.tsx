@@ -2,10 +2,7 @@ import { motion } from "framer-motion";
 import HomeHelmet from "@helmets/HomeHelmet";
 import { Box, useComputedColorScheme } from "@mantine/core";
 import classes from "./Home.module.css";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "@store/Store";
-import { useEffect } from "react";
-import { GetStudentApi } from "@store/api/StudentApi";
+
 
 import HeaderPage from "./component/headerPage/HeaderPage";
 import PerformanceCard from "./component/performanceCard/PerformanceCard";
@@ -18,13 +15,8 @@ export default function Home() {
   const computedColorScheme = useComputedColorScheme("light", {
     getInitialValueInEffect: true,
   });
-  const dispatch = useDispatch<AppDispatch>();
-  const { AuthModel } = useSelector((state: RootState) => state.Auth);
 
-  useEffect(() => {
-    if (!AuthModel?.userId) return;
-    dispatch(GetStudentApi(AuthModel.userId));
-  }, []);
+
 
   const { language } = useLanguage();
 

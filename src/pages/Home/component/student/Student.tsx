@@ -1,5 +1,4 @@
 import { Box, Text, useComputedColorScheme } from "@mantine/core";
-import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./Student.module.css";
 import { IconMailFilled, IconPhoneFilled } from "@tabler/icons-react";
